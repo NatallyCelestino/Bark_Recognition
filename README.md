@@ -5,8 +5,7 @@
 🌳 **Sobre o Amazon Bark** 🌳
 
 ---
-
-
+Amazon Bark é um conjunto de imagens de cascas (ritidoma) de árvores exploradas comercialmente para fins madeireiros na Amazônia brasileira. No total, o conjunto é constituido por 2.803 imagens de 16 espécies. Foram obtidas imagens de 10 árvores por espécie, com dois dispositivos: CANON e iOS iPhone 11, com resolução de 3024 x 4032 e 4000 x 5328, respectivamente. As imagens foram coletadas em 3 Áreas de Manejo Florestal (AMF), situados nos municípios de Nova Maringá, Feliz Natal e Cotriguaçu, Estado do Mato Grosso. Coletas botânicas foram realizadas em 5 árvores por espécie, com posterior montagem de exsicatas e envio para o Herbário Felisberto Camargo (HFC) da Universidade Federal Rural da Amazônia. 
 ---
 |                 Espécies                  |  n   |
 |:-----------------------------------------:|------|
@@ -29,9 +28,7 @@
 
 </center>
 
-
 ---
-Amazon Bark é um conjunto de imagens de cascas (ritidoma) de árvores exploradas comercialmente para fins madeireiros na Amazônia brasileira. No total, o conjunto é constituido por 2.803 imagens de 16 espécies. Foram obtidas imagens de 10 árvores por espécie, com dois dispositivos: CANON e iOS iPhone 11, com resolução de 3024 x 4032 e 4000 x 5328, respectivamente. As imagens foram coletadas em 3 Áreas de Manejo Florestal (AMF), situados nos municípios de Nova Maringá, Feliz Natal e Cotriguaçu, Estado do Mato Grosso. Coletas botânicas foram realizadas em 5 árvores por espécie, com posterior montagem de exsicatas e envio para o Herbário Felisberto Camargo (HFC) da Universidade Federal Rural da Amazônia. 
 
 Divisão de dados
 
