@@ -32,19 +32,19 @@ Amazon Bark é um conjunto de imagens de cascas (ritidoma) de árvores explorada
 
 ---
 
-Sobre os notebooks
+SOBRE OS NOTEBOOKS
 
-Divisão de dados
+Divisão de dados:
 
-Uma divisão estratificada foi realizada destinando 80% e 20% das imagens para treino e teste, respectivamente. A divisão matém a mesma proporção das classes (80% e 20%) dentro de cada conjunto. Para tanto, foi usada a biblioteca splitfolders. As divisões são construídas e salvas automaticamente no drive. Na sequência, foi realizada a extração de 50 patches de cada imagem, com dimensão de 256 x 256. Portanto, a quantidade de patches foi de 111.850 (treino) e 28.300 (teste), totalizando 140.150 patches extraídos das 2.803 imagens originais.
+Uma divisão estratificada foi realizada destinando 80% e 20% das imagens para treino e teste, respectivamente. A divisão mantém a mesma proporção das classes (80% e 20%) dentro de cada conjunto. Para tanto, foi usada a biblioteca splitfolders (Notebook 1). As divisões são construídas e salvas automaticamente no drive. Na sequência, foi realizada a extração de 50 patches de cada imagem, com dimensão de 256 x 256 (Notebook 4). Portanto, a quantidade de patches foi de 111.850 (treino) e 28.300 (teste), totalizando 140.150 patches extraídos das 2.803 imagens originais.
 
-Extração de características
+Extração de características:
 
-- Foram utilizadas variações do operador Padrão Binário Local (PBL) Uniforme, Invariante a Rotação e Não Invariante a Rotação;
+- Foram utilizadas variações do operador Padrão Binário Local (PBL) Uniforme, Invariante a Rotação e Não Invariante a Rotação, para extração de características de imagens com tamanhos originais e subimagens (Notebooks 2 e 5, respectivamente);
 
-- Quatro Redes Neurais Convolucionais pré-treinadas foram carregadas com pesos ImageNet: ResNet50, VGG16, InceptionV3 e MobileNetV2.
+- Quatro Redes Neurais Convolucionais pré-treinadas foram carregadas com pesos ImageNet (ResNet50, VGG16, InceptionV3 e MobileNetV2) e usadas para extrair características das imagens com tamanhos originais e subimagens (Notebook 7).
 
-Classificação
+Classificação:
 
-- Quatro algoritmos de Machine Learning foram utilizados: Máquinas de Vetores de Suporte, Redes Neurais Artificiais, Floresta Aleatória e Análise Discriminante Linear.
+- Quatro algoritmos de Machine Learning foram utilizados (Máquinas de Vetores de Suporte, Redes Neurais Artificiais, Floresta Aleatória e Análise Discriminante Linear), para classificar as espécies a partir das características extraídas pelos operadores PBL e CNNs pré-treinadas (Notebooks 3, 6 e 8).
 ---
