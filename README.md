@@ -2,7 +2,7 @@
   
 ---
 
-🌳 **Amazon Bark** 🌳
+🌳 **Sobre o Amazon Bark** 🌳
 
 ---
 
