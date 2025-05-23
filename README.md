@@ -2,11 +2,11 @@
   
 ---
 
-🌳 **Sobre o Amazon Bark** 🌳
+🌳 **About o Amazon Bark** 🌳
 
 ---
 
-Amazon Bark é um conjunto de imagens de cascas (ritidoma) de árvores exploradas comercialmente para fins madeireiros na Amazônia brasileira. No total, o conjunto é constituido por 2.803 imagens de 16 espécies. Foram obtidas imagens de 10 árvores por espécie, com dois dispositivos: CANON e iOS iPhone 11, com resolução de 3024 x 4032 e 4000 x 5328, respectivamente. As imagens foram coletadas em 3 Áreas de Manejo Florestal (AMF), situados nos municípios de Nova Maringá, Feliz Natal e Cotriguaçu, Estado do Mato Grosso. Coletas botânicas foram realizadas em 5 árvores por espécie, com posterior montagem de exsicatas e envio para o Herbário Felisberto Camargo (HFC) da Universidade Federal Rural da Amazônia. 
+Amazon Bark is a dataset composed of bark (rhytidome) images from tree species that are commercially exploited for timber purposes in the Brazilian Amazon. The dataset contains a total of 2,803 images representing 16 species. Images were collected from 10 trees per species using two devices: a CANON digital camera and an iOS iPhone 11, with resolutions of 3024 × 4032 and 4000 × 5328 pixels, respectively. The images were captured in three Forest Management Areas (FMAs), located in the municipalities of Nova Maringá, Feliz Natal, and Cotriguaçu, in the state of Mato Grosso. Botanical collections were conducted on five trees per species, with specimens prepared as herbarium vouchers and deposited at the Felisberto Camargo Herbarium (HFC) of the Federal Rural University of the Amazon. 
 
 ---
 |                 Espécies                  |  n   |
@@ -19,7 +19,7 @@ Amazon Bark é um conjunto de imagens de cascas (ritidoma) de árvores explorada
 |Dipteryx odorata (Aubl.) Forsyth f.        | 06   |
 |Erisma uncinatum Warm.                     | 07   |
 |Goupia glabra Aubl.                        | 08   |
-|Hymenolobium petraueum Ducke               | 09   |
+|Hymenolobium petraeum Ducke                | 09   |
 |Mezilaurus itauba (Meisn.) Taub. ex Mez    | 10   |
 |Parkia pendula (Willd.) Benth. ex Walp.    | 11   |
 |Protium acrense Daly                       | 12   |
@@ -31,20 +31,17 @@ Amazon Bark é um conjunto de imagens de cascas (ritidoma) de árvores explorada
 </center>
 
 ---
+Data Partitioning
 
-SOBRE OS NOTEBOOKS
+A stratified split was applied, assigning 80% and 20% of the images to training and testing sets, respectively. This partitioning preserved class proportions (80% and 20%) within each set. The splitfolders Python library was used to perform and save these partitions automatically to the drive. Subsequently, 50 patches of 256 × 256 pixels were extracted from each image, resulting in 111,850 patches for training and 28,300 for testing—a total of 140,150 patches derived from the 2,803 original images.
 
-Divisão de dados:
+Feature Extraction
 
-Uma divisão estratificada foi realizada destinando 80% e 20% das imagens para treino e teste, respectivamente. A divisão mantém a mesma proporção das classes (80% e 20%) dentro de cada conjunto. Para tanto, foi usada a biblioteca splitfolders (Notebook 1). As divisões são construídas e salvas automaticamente no drive. Na sequência, foi realizada a extração de 50 patches de cada imagem, com dimensão de 256 x 256 (Notebook 4). Portanto, a quantidade de patches foi de 111.850 (treino) e 28.300 (teste), totalizando 140.150 patches extraídos das 2.803 imagens originais.
+- Variations of the Local Binary Pattern (LBP) operator were employed, including Uniform, Rotation-Invariant, and Non-Rotation-Invariant patterns.
 
-Extração de características:
+= Four pre-trained Convolutional Neural Networks (CNNs) were used as feature extractors, loaded with ImageNet weights: ResNet50, VGG16, InceptionV3, and MobileNetV2.
 
-- Foram utilizadas variações do operador Padrão Binário Local (PBL) Uniforme, Invariante a Rotação e Não Invariante a Rotação, para extração de características de imagens com tamanhos originais e subimagens (Notebooks 2 e 5, respectivamente);
+Classification
 
-- Quatro Redes Neurais Convolucionais pré-treinadas foram carregadas com pesos ImageNet (ResNet50, VGG16, InceptionV3 e MobileNetV2) e usadas para extrair características das imagens com tamanhos originais e subimagens (Notebook 7).
-
-Classificação:
-
-- Quatro algoritmos de Machine Learning foram utilizados (Máquinas de Vetores de Suporte, Redes Neurais Artificiais, Floresta Aleatória e Análise Discriminante Linear), para classificar as espécies a partir das características extraídas pelos operadores PBL e CNNs pré-treinadas (Notebooks 3, 6 e 8).
+- Four machine learning algorithms were applied: Support Vector Machines (SVM), Artificial Neural Networks (ANN), Random Forest (RF), and Linear Discriminant Analysis (LDA).
 ---
