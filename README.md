@@ -39,7 +39,7 @@ Feature Extraction
 
 - Variations of the Local Binary Pattern (LBP) operator were employed, including Uniform, Rotation-Invariant, and Non-Rotation-Invariant patterns.
 
-= Four pre-trained Convolutional Neural Networks (CNNs) were used as feature extractors, loaded with ImageNet weights: ResNet50, VGG16, InceptionV3, and MobileNetV2.
+- Four pre-trained Convolutional Neural Networks (CNNs) were used as feature extractors, loaded with ImageNet weights: ResNet50, VGG16, InceptionV3, and MobileNetV2.
 
 Classification
 
